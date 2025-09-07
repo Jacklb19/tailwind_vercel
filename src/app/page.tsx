@@ -156,47 +156,50 @@ export default function Home() {
               </h2>
             </div>
             <div className="flex items-center text-gray-400 text-sm mt-2 gap-2">
-              <img
-                src="eye.svg"
-                alt="views"
-                className="w-4 h-6"
-              />
+              <img src="eye.svg" alt="views" className="w-4 h-6" />
               <span>80,989</span>
             </div>
           </div>
         </div>
 
-        {/* Perfil periodista */}
         <div className="col-span-6 bg-white rounded-2xl shadow-lg p-6 flex items-center gap-6">
+          {/* Imagen */}
           <img
             src="https://randomuser.me/api/portraits/men/32.jpg"
             alt="Alex Morrison"
-            className="w-32 h-32 rounded-2xl object-cover"
+            className="basis-2/5 h-48 rounded-2xl object-cover"
           />
-          <div className="flex flex-col flex-1">
-            <h2 className="text-gray-900 font-bold text-xl">Alex Morrison</h2>
-            <p className="text-gray-400 text-sm">Senior Journalist</p>
 
+          {/* Info */}
+          <div className="flex flex-col basis-3/5">
+            {/* Nombre y rol */}
+            <div>
+              <h2 className="text-gray-900 font-bold text-xl">Alex Morrison</h2>
+              <p className="text-gray-400 text-sm">Senior Journalist</p>
+            </div>
+
+            {/* Stats */}
             <div className="flex justify-between bg-gray-100 rounded-xl p-3 my-4">
               <div className="flex flex-col items-center flex-1">
-                <p className="text-gray-900 font-semibold">34</p>
                 <span className="text-xs text-gray-500">Articles</span>
+                <p className="text-gray-900 font-semibold">34</p>
               </div>
               <div className="flex flex-col items-center flex-1">
-                <p className="text-gray-900 font-semibold">980</p>
                 <span className="text-xs text-gray-500">Followers</span>
+                <p className="text-gray-900 font-semibold">980</p>
               </div>
               <div className="flex flex-col items-center flex-1">
-                <p className="text-gray-900 font-semibold">8.9</p>
                 <span className="text-xs text-gray-500">Rating</span>
+                <p className="text-gray-900 font-semibold">8.9</p>
               </div>
             </div>
 
-            <div className="flex gap-3 mt-auto">
-              <button className="px-6 py-2 rounded-xl border border-gray-300 text-gray-500">
+            {/* Botones */}
+            <div className="flex gap-3">
+              <button className="w-full py-2 rounded-xl border border-gray-300 text-gray-500">
                 Chat
               </button>
-              <button className="px-6 py-2 rounded-xl bg-blue-500 text-white">
+              <button className="w-full py-2 rounded-xl bg-blue-500 text-white">
                 Follow
               </button>
             </div>
@@ -206,16 +209,16 @@ export default function Home() {
         <div className="col-span-2 flex flex-col justify-between h-full">
           {/* Flechas */}
           <div className="flex justify-center items-center gap-4 flex-1">
-            <button className="w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center">
+            <button className="w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center">
               <span className="text-gray-500 text-lg">&lt;</span>
             </button>
-            <button className="w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center">
+            <button className="w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center">
               <span className="text-gray-500 text-lg">&gt;</span>
             </button>
           </div>
 
           {/* Tags */}
-          <div className="bg-white rounded-2xl shadow-lg p-3 gap-2 flex flex-wrap ">
+          <div className="bg-white rounded-2xl shadow-lg p-5 gap-2 flex flex-wrap ">
             <span className="px-2 py-1 bg-gray-100 rounded-md text-gray-500 text-sm">
               Donald Trump
             </span>
